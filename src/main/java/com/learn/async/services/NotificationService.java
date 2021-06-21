@@ -15,7 +15,7 @@ public class NotificationService {
 
 
 
-    @Async
+    @Async("threadPoolTaskExecutor")
     public void sendAsyncTextMessage(String mobile){
         String threadName=Thread.currentThread().getName();
         sleep(3000);
